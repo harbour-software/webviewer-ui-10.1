@@ -19,6 +19,9 @@ import { getStep } from 'helpers/zoom';
 import { getMinZoomLevel, getMaxZoomLevel } from 'constants/zoomFactors';
 import MeasurementOverlay from 'components/MeasurementOverlay';
 import PageNavOverlay from 'components/PageNavOverlay';
+import PageSliderOverlay from 'components/PageSliderOverlay';
+import PagePreviousOverlay from 'components/PagePreviousOverlay';
+import PageNextOverlay from 'components/PageNextOverlay';
 import ToolsOverlay from 'components/ToolsOverlay';
 import ReaderModeViewer from 'components/ReaderModeViewer';
 import ScaleOverlayContainer from 'components/ScaleOverlay/ScaleOverlayContainer';
@@ -361,6 +364,27 @@ class DocumentContainer extends React.PureComponent {
                   />
                 )}
 
+                {showPageNav &&
+                  <PageSliderOverlay
+                    showNavOverlay={this.state.showNavOverlay}
+                    onMouseEnter={this.pageNavOnMouseEnter}
+                    onMouseLeave={this.pageNavOnMouseLeave}
+                  />
+                }
+                {showPageNav &&
+                  <PagePreviousOverlay
+                    showNavOverlay={this.state.showNavOverlay}
+                    onMouseEnter={this.pageNavOnMouseEnter}
+                    onMouseLeave={this.pageNavOnMouseLeave}
+                  />
+                }
+                {showPageNav &&
+                  <PageNextOverlay
+                    showNavOverlay={this.state.showNavOverlay}
+                    onMouseEnter={this.pageNavOnMouseEnter}
+                    onMouseLeave={this.pageNavOnMouseLeave}
+                  />
+                } 
                 {isMobile && !isInDesktopOnlyMode && <ToolsOverlay />}
               </div>
             </div>
