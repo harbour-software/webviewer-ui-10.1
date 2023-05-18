@@ -35,7 +35,9 @@
     "i18next-http-backend": "^1.0.16",
     "quill-mention": "^3.1.0",
     "react": "^17.0.0",
+    "react-collapsible": "^2.10.0",
     "react-color": "^2.18.1",
+    "react-datepicker": "^4.11.0",
     "react-dnd": "^14.0.2",
     "react-dnd-html5-backend": "^14.0.0",
     "react-dom": "^17.0.0",
@@ -72,6 +74,7 @@
     "@hot-loader/react-dom": "^17.0.2",
     "@pdftron/webviewer-downloader": "^1.4.2",
     "@pdftron/webviewer-reading-mode": "1.0.7",
+    "@reduxjs/toolkit": "^1.8.1",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
@@ -123,7 +126,6 @@
     "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-hot-middleware": "^2.25.0",
-    "@reduxjs/toolkit": "^1.8.1"
+    "webpack-hot-middleware": "^2.25.0"
   }
 }
