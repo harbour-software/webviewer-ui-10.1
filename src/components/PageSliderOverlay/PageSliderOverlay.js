@@ -31,7 +31,9 @@ class PageSliderOverlay extends React.PureComponent {
   }
 
   onChange = event => {
-    core.setCurrentPage(event.target.value);
+    if (!isNaN(parseInt(event.target.value))) {
+      core.setCurrentPage(parseInt(event.target.value));
+    }
   }
 
   onBlur = () => {
